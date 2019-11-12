@@ -5,7 +5,7 @@ const app = express()
 const MongoClient = require('mongodb').MongoClient
 var ObjectId = require('mongodb').ObjectID
 
-const uri = "mongodb+srv://georgelpe-desktop:25253535@crud-medium-6sfub.mongodb.net/test?retryWrites=true&w=majority"
+const uri = "mongodb+srv://database-name:<db-password>@crud-medium-6sfub.mongodb.net/test?retryWrites=true&w=majority"
 
 MongoClient.connect(uri, (err, client) => {
     if (err) return console.log(err)
